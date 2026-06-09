@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Package Solution Picker · Jesal Shah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="name" href="../index.html">Jesal Shah</a><div class="links"><a href="../index.html#work">Work</a><a href="../index.html#contact">Contact</a></div></div></nav>
+
+<div class="cs-hero"><div class="wrap">
+  <a class="back btn-text" href="../index.html#work">&larr; All work</a>
+  <div class="mono" style="margin-bottom:18px;">Combinatorial optimization · Sarine Technologies</div>
+  <h1>Package Solution Picker</h1>
+  <p class="one-liner">A browser-based decision-support tool that scores and ranks every possible cutting plan across an entire package &mdash; turning hours of manual evaluation into seconds.</p>
+</div></div>
+
+<div class="wrap">
+  <figure class="cs-shot"><img src="../assets/picker-dashboard.png" alt="Package Solution Picker dashboard"><figcaption>Live dashboard: package-level KPIs, scoring weights, clarity mix, and the yield-vs-value frontier.</figcaption></figure>
+
+  <div class="cs-metrics">
+    <div class="m"><span class="mono">Combinations scored</span><strong>27,000+</strong></div>
+    <div class="m"><span class="mono">Planning time</span><strong>~95% faster</strong></div>
+    <div class="m"><span class="mono">Stones / package</span><strong>up to 1,900</strong></div>
+    <div class="m"><span class="mono">Approval</span><strong>Global CEO</strong></div>
+  </div>
+
+  <figure class="cs-shot"><img src="../assets/picker-comparison.png" alt="Default vs Optimised package comparison view"><figcaption>Default vs Optimised: the comparison panel shows exactly what the user's filters and scoring weights changed across the package.</figcaption></figure>
+
+  <div class="cs-block"><h2>Context</h2><p>A single package (kapan) can hold up to ~1,900 rough stones. Every stone has many possible cutting solutions, and each one trades off yield, dollar value, clarity mix, and size distribution differently. Planners evaluated this by hand, stone by stone &mdash; a slow, inconsistent process.</p></div>
+
+  <div class="cs-block"><h2>The problem</h2><p>There was no way to make decisions at the <em>package</em> level quickly or consistently. And the &ldquo;best&rdquo; answer isn't fixed &mdash; it depends entirely on what you're optimizing for, which shifts by customer and by market conditions. A tool had to make that priority explicit and adjustable.</p></div>
+
+  <div class="cs-block"><h2>What I built</h2><p>A browser-based tool that scores 27,000+ cutting-plan combinations per package and ranks the best solution for every stone. Key design decisions:</p>
+  <ul>
+    <li><strong>Independent scoring weights</strong> &mdash; separate yield and value sliders, so users dial in exactly how much to chase weight versus dollars.</li>
+    <li><strong>23 configurable hard filters</strong> &mdash; clarity ranges, min yield/value, max loss, pointer clarity, colour, shape, and cut/charni priorities exclude solutions that don't qualify.</li>
+    <li><strong>Default vs Optimised view</strong> &mdash; a side-by-side panel showing exactly what the user's filters changed.</li>
+    <li><strong>Manual override with undo</strong> &mdash; the expert always keeps the final, reversible call.</li>
+  </ul>
+  <p>Solutions are scored with a weighted model across yield, normalized value, and clarity/cut/charni priorities; any solution failing a hard filter is excluded, with a clearly-marked fallback when nothing passes.</p></div>
+
+  <div class="cs-block"><h2>Outcome</h2><p>Planning time dropped by roughly 95% for the largest packages, and the tool earned Global CEO approval for customer deployment after executive review and demonstration.</p></div>
+
+  <div class="cs-block"><h2>What I learned</h2><p>The winning principle was: optimize aggressively, but never take the decision away from the expert. Surfacing <em>why</em> a solution scored well &mdash; and making every choice reversible &mdash; was what turned an optimization engine into a tool planners actually trusted.</p></div>
+
+  <div class="cs-cta"><h3>Next</h3><p>MVP MultiPlan extends configurable optimization to per-customer planning logic.</p><a class="btn btn-fill" href="multiplan.html">MVP MultiPlan &rarr;</a></div>
+</div>
+
+<footer><div class="wrap"><span class="mono">&copy; 2026 Jesal Shah</span><span class="mono">Product Manager</span></div></footer>
+<script src="../assets/assistant.js"></script>
+</body></html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CAC — Calculated Accurate Clarity · Jesal Shah</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<nav><div class="wrap"><a class="name" href="../index.html">Jesal Shah</a><div class="links"><a href="../index.html#work">Work</a><a href="../index.html#contact">Contact</a></div></div></nav>
+
+<div class="cs-hero"><div class="wrap">
+  <a class="back btn-text" href="../index.html#work">&larr; All work</a>
+  <div class="mono" style="margin-bottom:18px;">Model accuracy &amp; trust · Sarine Technologies</div>
+  <h1>CAC &mdash; Calculated Accurate Clarity</h1>
+  <p class="one-liner">Rebuilding trust in an AI prediction experts had stopped believing &mdash; by closing the loop between production data, user behaviour, and the model.</p>
+</div></div>
+
+<div class="wrap">
+  <figure class="cs-shot"><img src="../assets/cac-calculate.png" alt="The Calculate Accurate Clarity action in the planning platform"><figcaption>Calculate Accurate Clarity recomputes a polished stone's predicted clarity grade directly from its mapped inclusions.</figcaption></figure>
+
+  <div class="cs-metrics">
+    <div class="m"><span class="mono">Clarity correctness</span><strong>16% &rarr; 87%</strong></div>
+    <div class="m"><span class="mono">Scope</span><strong>India &amp; Israel</strong></div>
+    <div class="m"><span class="mono">My role</span><strong>Initiative lead</strong></div>
+  </div>
+
+  <div class="cs-block"><h2>Context</h2><p>Sarine's planning platform predicts the clarity grade of a polished stone directly from a scan of the rough &mdash; a prediction planners depend on to decide how to cut. Clarity is a major driver of a stone's value, so getting it right shapes every downstream decision.</p><p>When the prediction is wrong often enough, planners stop trusting the automation and fall back to slow manual judgment &mdash; which quietly undermines the product's entire value proposition.</p></div>
+
+  <div class="cs-block"><h2>The problem</h2><p>Predicted clarity was correct only about 16% of the time. But the real difficulty wasn't a single broken component &mdash; it was that &ldquo;correctness&rdquo; itself had to be defined, measured against real production outcomes, and validated by the people who actually make the cutting calls. There was no clean ground-truth signal sitting in a database waiting to be used.</p></div>
+
+  <div class="cs-block"><h2>My role &amp; process</h2><p>I led the improvement initiative across teams in India and Israel, acting as the bridge between planners, the demo team, and engineering. My work broke into three loops:</p>
+  <ul>
+    <li><strong>Production data collection</strong> &mdash; structuring how real outcomes were captured so the model could be measured against reality, not assumptions.</li>
+    <li><strong>Planner validation</strong> &mdash; sitting with planners to understand how they actually judge clarity and where the system diverged from expert reasoning.</li>
+    <li><strong>Customer feedback analysis</strong> &mdash; turning patterns in selection behaviour into prioritized, concrete requirements engineering could act on.</li>
+  </ul>
+  <p>The hardest part was translation: converting tacit manufacturing behaviour and clarity-selection patterns into specifications a distributed engineering team could build against.</p></div>
+
+  <div class="cs-block" style="max-width:none;">
+    <h2 class="gallery-head">The feature in action</h2>
+    <div class="gallery">
+      <figure><img src="../assets/inclusion-map.jpg" alt="3D inclusion map of a rough stone"><figcaption>The inclusion map: internal flaws plotted in 3D &mdash; the input to every clarity prediction.</figcaption></figure>
+      <figure><img src="../assets/cac-clarity-grades.png" alt="Clarity grades assigned to each candidate polish"><figcaption>Each candidate polish gets its own clarity grade (VS1, VVS1, VVS2&hellip;) based on the inclusions it would contain.</figcaption></figure>
+      <figure><img src="../assets/cac-menu.png" alt="Planner triggering the clarity recalculation per solution"><figcaption>Planners trigger the recalculation per solution &mdash; keeping a human in the loop on every call.</figcaption></figure>
+    </div>
+    <p class="mono" style="margin-top:10px;">Click any image to enlarge</p>
+  </div>
+
+  <div class="cs-block"><h2>Outcome</h2><p>Clarity correctness rose from 16% to 87%, restoring planner trust in the automated output and bringing the product's core promise back to life.</p></div>
+
+  <div class="cs-block"><h2>What I learned</h2><p>Model accuracy is a product problem, not only a data-science one. The validation loop and the stakeholder translation mattered as much as any algorithmic change &mdash; because a prediction only creates value once the expert using it believes it.</p></div>
+
+  <div class="cs-cta"><h3>See the other work</h3><p>The Package Solution Picker takes the same trust-the-system principle into combinatorial optimization.</p><a class="btn btn-fill" href="package-solution-picker.html">Package Solution Picker &rarr;</a></div>
+</div>
+
+<footer><div class="wrap"><span class="mono">&copy; 2026 Jesal Shah</span><span class="mono">Product Manager</span></div></footer>
+<script src="../assets/assistant.js"></script>
+<script src="../assets/gallery.js"></script>
+</body></html>
